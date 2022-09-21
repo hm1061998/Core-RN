@@ -21,7 +21,7 @@ import Button from '~/components/BasesComponents/Button';
 import { producers } from '~/queryHooks';
 import { PAGE_SIZE } from '@env';
 import _ from 'lodash';
-import { useRefreshOnFocus, useRefreshByUser } from '~/utils/hooks';
+import { useRefreshOnFocus } from '~/utils/hooks';
 import { useLayoutContext } from '~/layouts/ControlProvider';
 import tw from '~/lib/tailwind';
 import Create from './Create';
