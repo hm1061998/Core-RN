@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Spa Pharma",
+    "slug": "spa-pharmar",
+    "owner": "vgasoft",
+    "jsEngine": "hermes",
+    "scheme": "spapharma",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo_f2.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logo_f2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vgasoft.spapharma",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Granting access will allow you to take photos and add them to attachment fields.",
+        "NSPhotoLibraryUsageDescription": "Grant your photo library access to take photos and add them to the attachment fields"
+      }
+    },
+    "android": {
+      "package": "com.vgasoft.spapharma",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/logo_f2.png"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/4fd9d2db-9643-41b9-a92b-fb1554263959"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4fd9d2db-9643-41b9-a92b-fb1554263959"
+      }
+    },
+    "plugins": [
+      "@notifee/react-native",
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "582408019152258",
+          "clientToken": "f42fca2824398299f78702439d0cfea0",
+          "displayName": "Spa Pharma"
+        }
+      ]
+    ]
+  }
+}

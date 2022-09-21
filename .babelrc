@@ -1,0 +1,29 @@
+{
+  "presets": [
+    "babel-preset-expo"
+  ],
+  "plugins": [
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathPrefix": "~", // Chúng ta cần cho babel biết "~"
+        "rootPathSuffix": "." // sẽ được convert thành "."
+      }
+    ]
+  ],
+  "retainLines": true,
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-remove-console",
+        [
+          "babel-plugin-root-import",
+          {
+            "rootPathPrefix": "~",
+            "rootPathSuffix": "."
+          }
+        ]
+      ]
+    }
+  }
+}

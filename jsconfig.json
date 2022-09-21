@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "baseUrl": ".", // Đặt base url là thư mục gốc
+    "paths": {
+      "~/*": [
+        "./*"
+      ] // Đặt "~" là alias cho thư mục src
+    },
+  },
+  "exclude": [
+    "node_modules",
+    ".expo",
+    ".expo-shared",
+    ".history"
+     // Đừng bắt VSCode nó phải chọc vào
+  ] // cái đống trong này.
+}
