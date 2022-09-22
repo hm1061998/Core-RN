@@ -66,6 +66,7 @@ const Home = ({ navigation }) => {
   }));
   const labelsChart = dataCharDetail.map(item => item.createdate?.slice(0, 5));
 
+  // return null;
   // console.log({ dataCharDetail });
   return (
     <View style={tw`flex-1 pt-status-bar bg-THEME`}>
@@ -93,7 +94,9 @@ const Home = ({ navigation }) => {
         <ScrollView nestedScrollEnabled showsVerticalScrollIndicator={false}>
           <View style={tw`bg-white rounded-b-2xl w-full px-5 py-3 shadow-sm`}>
             <Text style={tw`font-medium`}>Tổng doanh thu trong tháng</Text>
-            <BarChart values={valuesChart} labels={labelsChart} />
+            {dataCharDetail?.length > 0 && (
+              <BarChart values={valuesChart} labels={labelsChart} />
+            )}
           </View>
           <View style={tw`w-full`}>
             {dataCard?.length > 0 &&

@@ -149,8 +149,8 @@ const PickerHouse = (
             </View>
             <View style={tw`flex-1 w-full`}>
               <FlashList
-                data={isOpented ? arr : []}
-                // data={arr}
+                // data={isOpented ? arr : []}
+                data={arr}
                 contentContainerStyle={tw`pb-30`}
                 estimatedItemSize={50}
                 numColumns={5}
